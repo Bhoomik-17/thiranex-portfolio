@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Bhoomika through the accessible portfolio contact form.">
+  <meta name="author" content="Bhoomika">
+  <meta name="robots" content="index, follow">
+  <title>Contact | Bhoomika</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html" aria-label="Bhoomika home">Portfolio</a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-header" aria-labelledby="page-title">
+      <div class="container">
+        <p class="eyebrow">Let's connect</p>
+        <h1 id="page-title">Contact Me</h1>
+        <p class="lead">Use the form below to send a message.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="form-title">
+      <div class="container form-container">
+        <form action="#" method="post" aria-labelledby="form-title">
+          <h2 id="form-title">Send a Message</h2>
+
+          <div class="form-group">
+            <label for="name">Full Name <span aria-hidden="true">*</span></label>
+            <input id="name" name="name" type="text" autocomplete="name" required aria-required="true">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address <span aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" required aria-required="true">
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message <span aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" rows="7" required aria-required="true"></textarea>
+          </div>
+
+          <button class="button" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Bhoomika. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
