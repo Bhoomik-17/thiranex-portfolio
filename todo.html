@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Interactive To-Do List application with CRUD operations, filtering, and local storage."
+  >
+
+  <meta name="author" content="Bhoomika">
+
+  <title>To-Do List | Bhoomika</title>
+
+  <link rel="stylesheet" href="css/todo.css">
+</head>
+
+<body>
+
+  <header class="todo-header">
+    <div class="container">
+      <a href="index.html" class="back-link">
+        ← Back to Portfolio
+      </a>
+
+      <h1>My To-Do List</h1>
+
+      <p>
+        Organize your tasks, track your progress, and stay productive.
+      </p>
+    </div>
+  </header>
+
+
+  <main class="container todo-main">
+
+    <section class="todo-app" aria-labelledby="todo-title">
+
+      <h2 id="todo-title">Task Manager</h2>
+
+      <!-- Add Task Form -->
+      <form id="todo-form" class="todo-form">
+
+        <label for="todo-input">
+          Add a new task
+        </label>
+
+        <div class="input-row">
+          <input
+            id="todo-input"
+            name="task"
+            type="text"
+            placeholder="Enter your task..."
+            autocomplete="off"
+            required
+          >
+
+          <button type="submit" class="add-button">
+            Add Task
+          </button>
+        </div>
+
+      </form>
+
+
+      <!-- Task Statistics -->
+      <div class="todo-info" aria-live="polite">
+
+        <span>
+          Total:
+          <strong id="total-count">0</strong>
+        </span>
+
+        <span>
+          Active:
+          <strong id="active-count">0</strong>
+        </span>
+
+        <span>
+          Completed:
+          <strong id="completed-count">0</strong>
+        </span>
+
+      </div>
+
+
+      <!-- Filters -->
+      <div class="filters" aria-label="Task filters">
+
+        <button
+          type="button"
+          class="filter-button active"
+          data-filter="all"
+          aria-pressed="true"
+        >
+          All
+        </button>
+
+        <button
+          type="button"
+          class="filter-button"
+          data-filter="active"
+          aria-pressed="false"
+        >
+          Active
+        </button>
+
+        <button
+          type="button"
+          class="filter-button"
+          data-filter="completed"
+          aria-pressed="false"
+        >
+          Completed
+        </button>
+
+      </div>
+
+
+      <!-- Dynamic Task List -->
+      <ul
+        id="todo-list"
+        class="todo-list"
+        aria-live="polite"
+        aria-label="Task list"
+      ></ul>
+
+
+      <!-- Empty Message -->
+      <p
+        id="empty-message"
+        class="empty-message"
+      >
+        No tasks yet. Add your first task!
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <footer class="todo-footer">
+    <div class="container">
+      <p>&copy; 2026 Bhoomika. Task 3 - JavaScript To-Do List.</p>
+    </div>
+  </footer>
+
+
+  <script src="js/todo.js"></script>
+
+</body>
+</html>
